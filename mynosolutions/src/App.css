@@ -1,0 +1,109 @@
+@import "tailwindcss";
+@font-face {
+  font-family: 'MyFont';
+  src: url('./assets/fonts/Panchang-Variable.ttf');
+}
+
+#root {
+  text-align: center;
+  width: 100%;
+  font-family: 'MyFont';
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+
+#app 
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+header nav a
+{
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+#home
+{
+  padding: 0% 15%;
+}
+
+#home p
+{
+  font-size: 1.2rem;
+}
+
+.servicios .card-cartel
+{
+  width: 47.5%;
+  margin-top: 3%;
+}
+
+
+.servicios .card-redes
+{
+  width: 47.5%;
+  margin-top: 3%;
+}
+
+.servicios .card-web
+{
+  width: 100%;
+  margin-top: 3%;
+}
+
+.servicios .card
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #fff;
+  border-radius: 15px;
+}
+
+.servicios .cards
+{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 5%;
+}
