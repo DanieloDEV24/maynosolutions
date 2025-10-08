@@ -1,7 +1,7 @@
 @import "tailwindcss";
 @font-face {
   font-family: 'MyFont';
-  src: url('./assets/fonts/Panchang-Variable.ttf');
+  src: url('./assets/fonts/Supreme-Variable.ttf');
 }
 
 #root {
@@ -87,7 +87,7 @@ header nav a
 .servicios .card-web
 {
   width: 100%;
-  margin-top: 3%;
+  margin-top: 5%;
 }
 
 .servicios .card
@@ -96,8 +96,9 @@ header nav a
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  border: 1px solid #fff;
+  /* border: 1px solid #fff; */
   border-radius: 15px;
+  background-color: rgba(255, 255, 255, .07);
 }
 
 .servicios .cards
@@ -106,4 +107,14 @@ header nav a
   justify-content: center;
   flex-wrap: wrap;
   gap: 5%;
+}
+
+.servicios .card h3
+{
+  text-align: start;
+}
+
+.servicios .card svg
+{
+  transform: translateY(2px);
 }
