@@ -4,6 +4,11 @@
   src: url('./assets/fonts/Supreme-Variable.ttf');
 }
 
+@font-face {
+  font-family: 'MyFont-Italic';
+  src: url('./assets/fonts/Supreme-VariableItalic.ttf');
+}
+
 #root {
   text-align: center;
   width: 100%;
@@ -71,6 +76,29 @@ header nav a
   font-size: 1.2rem;
 }
 
+#home h1 
+{
+  width: 100%;
+  font-size: 5rem;
+  font-weight: 700; 
+}
+
+#home h1.header2-home
+{
+  background: linear-gradient(to bottom, #a78bfa, #7c3aed);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
+#home p 
+{
+  width: 60%;
+  font-size: 1.4rem;
+  margin-top: 2%;
+}
+
 .servicios .card-cartel
 {
   width: 47.5%;
@@ -97,8 +125,16 @@ header nav a
   align-items: center;
   justify-content: center;
   /* border: 1px solid #fff; */
-  border-radius: 15px;
-  background-color: rgba(255, 255, 255, .07);
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 10px;
+  /* border: 1px solid rgba(255, 255, 255, 0.2); */
+}
+
+.servicios .card h3
+{
+  font-size: 1.7rem;
 }
 
 .servicios .cards
@@ -107,14 +143,39 @@ header nav a
   justify-content: center;
   flex-wrap: wrap;
   gap: 5%;
+  padding: 0% 5%;
 }
 
 .servicios .card h3
 {
   text-align: start;
 }
-
-.servicios .card svg
+.servicios .card p
 {
-  transform: translateY(2px);
+  width: 100%;
+  text-align: start;
+}
+
+.servicios .cards p
+{
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+
+.servicios .first-p
+{
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+.servicios .final-p
+{
+  font-family: 'MyFont-Italic';
+}
+
+.formulario-contacto form 
+{
+  display: flex;
+  flex-direction: column;
+  
 }

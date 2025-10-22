@@ -1,6 +1,7 @@
 import { Header } from './components/header'
 import { Home } from './components/home'
-import { Servicios } from './components/Servicios'
+import { Servicios } from './components/servicios'
+import { Contacto } from './components/contacto'
 import './App.css'
 
 function App() {
@@ -21,8 +22,9 @@ function App() {
         }}
       >
         <Header></Header>
-        <Home></Home>
-        <Servicios></Servicios>
+         <Home></Home>
+        {/*<Servicios></Servicios>
+        <Contacto></Contacto> */}
       </div>
     </div>
   )
