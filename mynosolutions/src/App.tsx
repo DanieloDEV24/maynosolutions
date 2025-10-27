@@ -2,6 +2,7 @@ import { Header } from './components/header'
 import { Home } from './components/home'
 import { Servicios } from './components/servicios'
 import { Contacto } from './components/contacto'
+import { MejoresSoluciones } from './components/mejoresSoluciones'
 import './App.css'
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
         }}
       >
         <Header></Header>
+          <MejoresSoluciones></MejoresSoluciones>
          <Home></Home>
         {/*<Servicios></Servicios>
         <Contacto></Contacto> */}

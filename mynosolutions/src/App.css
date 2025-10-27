@@ -177,5 +177,73 @@ header nav a
 {
   display: flex;
   flex-direction: column;
+}
+
+.soluciones-digitales{
+  display: flex;
+  gap: 3%;
+  width: 15%;
+  align-items: center;
+  border: 1px solid rgba(255, 255, 255, .15);
+  border-radius: 25px;
+  padding: .5% 1%;
+  background-color: rgba(255, 255, 255, .03);
+}
+
+.contenedor-soluciones-digitales
+{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+/* From Uiverse.io by adamgiebl */ 
+.cssbuttons-io-button {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 18px;
+  padding: 0.8em 1.5em 0.8em 1.2em;
+  color: white;
+  background: #ad5389;
+  background: linear-gradient(
+    0deg,
+    rgba(77, 54, 208, 1) 0%,
+    rgba(132, 116, 254, 1) 100%
+  );
+  border: none;
+  letter-spacing: 0.05em;
+  border-radius: 20em;
+  gap: 10px;
+  transition: all ease-out .2s;
+
+}
+
+.cssbuttons-io-button.btn-2 {
+  background: rgba(255, 255, 255, .07) !important; 
+  border: 1px solid rgb(255, 255, 255, .2) !important;
+}
+
+
+.cssbuttons-io-button:hover {
+  transform: scale(1.05);
+}
+
+.cssbuttons-io-button:active {
+  box-shadow: 0 0.3em 1em -0.5em #4d36d0be;
+}
+
+.btns{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 3%;
+  gap: 2%;
   
+}
+
+.soluciones-digitales svg 
+{
+  color: #8b52ee;
 }
