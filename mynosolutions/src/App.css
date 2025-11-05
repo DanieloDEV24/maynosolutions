@@ -15,6 +15,10 @@
   font-family: 'MyFont';
 }
 
+header{
+  padding: 3% 0%;
+}
+
 .logo {
   height: 6em;
   padding: 1.5em;
@@ -68,7 +72,8 @@ header nav a
 
 #home
 {
-  padding: 0% 15%;
+  padding: 6% 15%;
+  margin-bottom: 0%;
 }
 
 #home p
@@ -195,6 +200,8 @@ header nav a
   width: 100%;
   display: flex;
   justify-content: center;
+  margin-top: 2%;
+  margin-bottom: 0%;
 }
 
 /* From Uiverse.io by adamgiebl */ 
@@ -246,4 +253,69 @@ header nav a
 .soluciones-digitales svg 
 {
   color: #8b52ee;
+}
+
+.encabezado-nuestros-servicios {
+  font-weight: bold;
+}
+
+.encabezado-nuestros-servicios span
+{
+  color: #7c3aed;
+}
+
+.encabezado-nuestros-servicios
+{
+  margin-top: 5%;
+}
+
+
+.card-servicio {
+  text-align: start;
+  border: 1px solid rgba(255, 255, 255, .15);
+  padding: 5%;
+  border-radius: 15px;
+  background-color: rgba(255, 255, 255, .03);
+}
+
+.grid-servicios {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 🔹 3 columnas exactas */
+  gap: 3%;
+  padding: 3% 5%;
+}
+
+.icon-card-servicio{
+  background: linear-gradient(135deg, #a78bfa 0%, #7c3aed 100%);
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  margin-bottom: 2%;
+}
+
+h3.card-header{
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 2%;
+}
+
+p.card-description{
+  font-size: 1.2rem;
+  color: rgba(255, 255, 255, .7);
+  margin-bottom: 2%;
+}
+
+.card-servicio li {
+  list-style: disc;
+  margin-left: 1rem;
+  font-size: 1.2rem;
+  
+}
+
+.card-servicio li::marker {
+  color: #a78bfa; /* color del punto o número */
+  font-size: 1.2em; /* opcional */
 }
