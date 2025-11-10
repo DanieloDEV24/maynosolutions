@@ -17,6 +17,7 @@
 
 header{
   padding: 3% 0%;
+  margin-top: 1.5%;
 }
 
 .logo {
@@ -74,6 +75,7 @@ header nav a
 {
   padding: 6% 15%;
   margin-bottom: 0%;
+  padding-top: 2%;
 }
 
 #home p
@@ -200,7 +202,7 @@ header nav a
   width: 100%;
   display: flex;
   justify-content: center;
-  margin-top: 2%;
+  margin-top: 4%;
   margin-bottom: 0%;
 }
 
@@ -255,11 +257,11 @@ header nav a
   color: #8b52ee;
 }
 
-.encabezado-nuestros-servicios {
+.encabezado-nuestros-servicios, .title-proyectos {
   font-weight: bold;
 }
 
-.encabezado-nuestros-servicios span
+.encabezado-nuestros-servicios span, .title-proyectos span
 {
   color: #7c3aed;
 }
@@ -276,6 +278,12 @@ header nav a
   padding: 5%;
   border-radius: 15px;
   background-color: rgba(255, 255, 255, .03);
+  transition: all .3s ease;
+}
+
+.card-servicio:hover {
+  background-color: rgba(255, 255, 255, .07);
+  transform: scale(1.05);
 }
 
 .grid-servicios {
@@ -319,3 +327,4 @@ p.card-description{
   color: #a78bfa; /* color del punto o número */
   font-size: 1.2em; /* opcional */
 }
+
