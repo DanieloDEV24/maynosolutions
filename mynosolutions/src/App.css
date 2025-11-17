@@ -328,3 +328,135 @@ p.card-description{
   font-size: 1.2em; /* opcional */
 }
 
+
+.contenedor-nuestros-proyectos {
+  display: flex;
+  gap: 5%;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 3%;
+}
+
+.contenedor-nuestros-proyectos .card-proyecto {
+  width: 30%;
+  border-radius: 20px !important;
+  border: 1px solid rgba(255, 255, 255, .15);
+}
+
+.h2-proyecto {
+  font-size: 2rem;
+  text-align: start;
+  margin-bottom: 1%;
+}
+
+.contenido-card-proyecto {
+  padding: 3% 5%;
+}
+
+.categorias-proyectos {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  width: 100% !important;
+  font-size: 1.3rem;
+  margin-bottom: 1%;
+  color: #7c3aed;
+}
+
+.descripcion-proyecto {
+  text-align: start;
+}
+
+.contenedor-contacto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contacto {
+  width: 50%;
+  background-color: rgba(255, 255, 255, .07);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  border: 1px solid rgba(255, 255, 255, .15);
+  padding: 3%;
+  border-radius: 20px;
+}
+
+.contenedor-listos {
+  width: 100%;
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+}
+
+.listos-empezar {
+  display: flex;
+  gap: 3%;
+  width: 28%;
+  align-items: center;
+  border: 1px solid #8b52ee80;
+  border-radius: 25px;
+  padding: .5% 1%;
+  background-color: #8b52ee30;
+  color: #8b52ee;
+  justify-content: center;
+}
+
+.contacto h1 {
+  font-weight: bold;
+  margin-top: 4%;
+  width: 70%;
+}
+
+.contacto h1 span {
+  color: #7c3aed;
+}
+
+.contacto-message {
+  color: #ffffff80;
+  font-size: 1.2rem;
+  width: 80%;
+  margin-top: 4%;
+}
+
+.contacto .botones {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 3%;
+  gap: 2%;
+  
+}
+
+.formas-contacto .iconos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5%;
+  width: 100%;
+  color: #7c3aed;
+  margin-bottom: 5%;
+}
+
+.formas-contacto {
+  margin-top: 6%;
+  border-top: 1px solid #ffffff30;
+  width: 92%;
+  padding-top: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3%;
+}
+
+.div-forma-contacto {
+  width: 30%;
+}
+
+.texto-forma-pago {
+  font-size: 1.3rem;
+}
