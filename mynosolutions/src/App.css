@@ -187,14 +187,17 @@ header nav a
 }
 
 .soluciones-digitales{
-  display: flex;
+  display: inline-flex; /* IMPORTANTE si quieres que se ajuste al contenido */
   gap: 3%;
-  width: 15%;
+  width: fit-content;
   align-items: center;
+  justify-content: center;
+
   border: 1px solid rgba(255, 255, 255, .15);
   border-radius: 25px;
   padding: .5% 1%;
   background-color: rgba(255, 255, 255, .03);
+  white-space: nowrap;
 }
 
 .contenedor-soluciones-digitales
@@ -394,16 +397,19 @@ p.card-description{
 }
 
 .listos-empezar {
-  display: flex;
-  gap: 3%;
-  width: 28%;
+  display: inline-flex;      /* Se ajusta al contenido */
+  gap: 0.5rem;
   align-items: center;
+  justify-content: center;
+
+  width: max-content;        /* Alternativa más robusta a fit-content */
+  white-space: nowrap;       /* Evita saltos de línea */
+
   border: 1px solid #8b52ee80;
   border-radius: 25px;
-  padding: .5% 1%;
+  padding: .4rem 1rem;
   background-color: #8b52ee30;
   color: #8b52ee;
-  justify-content: center;
 }
 
 .contacto h1 {
@@ -459,4 +465,84 @@ p.card-description{
 
 .texto-forma-pago {
   font-size: 1.3rem;
+}
+
+#nuestros-servicios, .contenedor-proyectos
+{
+  margin-bottom: 5%;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover 
+{
+  color: #8b52ee;
+}
+/* <main-style> ============================ */
+.menu__link {
+  color: #fff;
+  line-height: 2;
+  position: relative;
+}
+
+.menu__link::before {
+  content: '';
+  width: 0;
+  height: 2px;
+  border-radius: 2px;
+  background-color: #8b52ee;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transition: right .4s, width .4s, left .4s;
+}
+
+.menu__link:hover::before {
+  width: 100%;
+  left: 0;
+}
+
+@media screen and (max-width: 1574px) {
+  #home p {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 1349px) {
+  #home p {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 1232px) {
+  #home h1 {
+    font-size: 4.5rem;
+  }
+
+  #home p {
+    font-size: 1.3rem;
+  }
+}
+
+
+@media screen and (max-width: 1108px) {
+  #home h1 {
+    font-size: 4.2rem;
+  }
+
+  #home p {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 1034px) {
+  #home h1 {
+    font-size: 4rem;
+  }
+
+  #home p {
+    width: 90%;
+  }
 }

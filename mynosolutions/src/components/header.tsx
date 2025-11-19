@@ -5,8 +5,8 @@ export const Header = () => {
         <header className='flex items-center justify-center w-full p-4 gap-20'>
 
             <nav className='flex gap-10'>
-                <a href="#">Home</a>
-                <a href="">Servicios</a>
+                <a href="#" className="menu__link">Home</a>
+                <a href="" className="menu__link">Servicios</a>
             </nav>
 
 
@@ -15,8 +15,8 @@ export const Header = () => {
             </a>
 
             <nav className='flex gap-10'>
-                <a href="">Contacto</a>
-                <a href="">Trabajos</a>
+                <a href="" className="menu__link">Contacto</a>
+                <a href="" className="menu__link">Trabajos</a>
             </nav>
         </header>
 
