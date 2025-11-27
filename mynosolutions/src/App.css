@@ -517,16 +517,107 @@ a:hover
 }
 
 @media screen and (max-width: 1232px) {
-  #home h1 {
+  /* #home h1 {
     font-size: 4.5rem;
   }
 
   #home p {
     font-size: 1.3rem;
+  } */
+
+  #home {
+    padding: 6% 10%;
+  }
+}
+
+@media screen and (max-width: 1079px) {
+  #home h1 {
+    font-size: 4.5rem;
   }
 }
 
 
+@media screen and (max-width: 971px) {
+  #home h1 {
+    font-size: 4.2rem;
+  }
+
+  #home p {
+    width: 90%;
+  }
+}
+
+
+@media screen and (max-width: 916px) {
+
+  #home p {
+    width: 95%;
+  }
+}
+
+
+
+@media screen and (max-width: 906px) {
+
+  #home {
+    padding: 6% 8%;
+  }
+
+  #home h1 {
+    font-size: 4rem;
+  }
+
+  #home p {
+    font-size: 1.1rem;
+  }
+}
+
+
+@media screen and (max-width: 822px) {
+
+  #home h1 {
+    font-size: 3.8rem;
+  }
+
+  #home p {
+    font-size: 1.1rem;
+  }
+}
+
+@media screen and (max-width: 781px) {
+
+  #home h1 {
+    font-size: 3.6rem;
+  }
+
+  #home p {
+    font-size: 1.1rem;
+  }
+
+  #home {
+    padding: 6% 7%;
+  }
+}
+
+
+@media screen and (max-width: 625px) {
+
+  #home h1 {
+    font-size: 3.4rem;
+  }
+
+  #home p {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 590px) {
+
+  #home h1 {
+    font-size: 3.1rem;
+  }
+}
+/*
 @media screen and (max-width: 1108px) {
   #home h1 {
     font-size: 4.2rem;
@@ -546,3 +637,69 @@ a:hover
     width: 90%;
   }
 }
+
+@media screen and (max-width: 986px) {
+  #home h1 {
+    font-size: 3.8rem;
+    margin-top: 0.5%;
+    margin-bottom: 0.5%;
+  }
+
+  #home p {
+    font-size: 1.2rem;
+    width: 95%;
+    margin-top: 0.5%;
+    margin-bottom: 0.5%;
+  }
+}
+
+
+@media screen and (max-width: 937px) {
+  #home h1 {
+    font-size: 3.6rem;
+    margin-top: 0.5%;
+    margin-bottom: 0.5%;
+  }
+
+  #home p {
+    font-size: 1.1rem;
+    width: 95%;
+    margin-top: 0.5%;
+    margin-bottom: 0.5%;
+  }
+}
+
+
+@media screen and (max-width: 887px) {
+  #home h1 {
+    font-size: 3.5rem;
+    margin-top: 0.5%;
+    margin-bottom: 0.5%;
+  }
+}
+
+
+@media screen and (max-width: 863px) {
+  #home h1 {
+    font-size: 3.4rem;
+    margin-top: 0.5%;
+    margin-bottom: 0.5%;
+  }
+}
+
+
+@media screen and (max-width: 838px) {
+
+  #home {
+    padding: 6% 10%;
+  }
+}
+
+
+@media screen and (max-width: 815px) {
+  #home h1 {
+    font-size: 3.2rem;
+    margin-top: 0.5%;
+    margin-bottom: 0.5%;
+  }
+} */
