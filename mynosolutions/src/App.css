@@ -73,7 +73,7 @@ header nav a
 
 #home
 {
-  padding: 6% 15%;
+  /* padding: 6% 15%; */
   margin-bottom: 0%;
   padding-top: 2%;
 }
@@ -83,21 +83,22 @@ header nav a
   font-size: 1.2rem;
 }
 
-#home h1 
-{
+#home h1 {
   width: 100%;
-  font-size: 5rem;
-  font-weight: 700; 
+  font-size: 7rem;
+  font-weight: bolder;
+  line-height: 1.1;
+  text-align: center;
 }
 
-#home h1.header2-home
-{
+#home h1.header2-home {
   background: linear-gradient(to bottom, #a78bfa, #7c3aed);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
   color: transparent;
 }
+
 
 #home p 
 {
@@ -504,202 +505,147 @@ a:hover
   left: 0;
 }
 
-@media screen and (max-width: 1574px) {
+
+@media screen and (max-width: 1320px) {
+
+  #home h1 {
+    font-size: 6rem;
+  }
+
+}
+
+@media screen and (max-width: 1170px) {
+
+  #home h1 {
+    font-size: 5rem;
+  }
+
+}
+
+@media screen and (max-width: 960px) {
+
+  #home h1 {
+    font-size: 4.5rem;
+  }
+
+}
+
+@media screen and (max-width: 860px) {
+
+  #home h1 {
+    font-size: 4rem;
+  }
+
+}
+
+@media screen and (max-width: 780px) {
+  #home {
+    padding: 0% 7%;
+  }
+  
+}
+
+@media screen and (max-width: 780px) {
+  #home h1{
+    font-size: 3.5rem;
+  }
+
+  #home {
+    padding-top: 3%;
+  }
+
+  .contenedor-soluciones-digitales {
+    margin-top: 15% !important;
+  }
+}
+
+@media screen and (max-width: 622px) {
+  #home h1{
+    font-size: 3.1rem;
+  }
+}
+
+
+@media screen and (max-width: 1200px) {
   #home p {
     width: 70%;
   }
 }
 
-@media screen and (max-width: 1349px) {
+@media screen and (max-width: 962px) {
   #home p {
     width: 80%;
-  }
-}
-
-@media screen and (max-width: 1232px) {
-  /* #home h1 {
-    font-size: 4.5rem;
-  }
-
-  #home p {
-    font-size: 1.3rem;
-  } */
-
-  #home {
-    padding: 6% 10%;
-  }
-}
-
-@media screen and (max-width: 1079px) {
-  #home h1 {
-    font-size: 4.5rem;
-  }
-}
-
-
-@media screen and (max-width: 971px) {
-  #home h1 {
-    font-size: 4.2rem;
-  }
-
-  #home p {
-    width: 90%;
-  }
-}
-
-
-@media screen and (max-width: 916px) {
-
-  #home p {
-    width: 95%;
-  }
-}
-
-
-
-@media screen and (max-width: 906px) {
-
-  #home {
-    padding: 6% 8%;
-  }
-
-  #home h1 {
-    font-size: 4rem;
-  }
-
-  #home p {
-    font-size: 1.1rem;
-  }
-}
-
-
-@media screen and (max-width: 822px) {
-
-  #home h1 {
-    font-size: 3.8rem;
-  }
-
-  #home p {
-    font-size: 1.1rem;
-  }
-}
-
-@media screen and (max-width: 781px) {
-
-  #home h1 {
-    font-size: 3.6rem;
-  }
-
-  #home p {
-    font-size: 1.1rem;
-  }
-
-  #home {
-    padding: 6% 7%;
-  }
-}
-
-
-@media screen and (max-width: 625px) {
-
-  #home h1 {
-    font-size: 3.4rem;
-  }
-
-  #home p {
-    font-size: 1rem;
-  }
-}
-
-@media screen and (max-width: 590px) {
-
-  #home h1 {
-    font-size: 3.1rem;
-  }
-}
-/*
-@media screen and (max-width: 1108px) {
-  #home h1 {
-    font-size: 4.2rem;
-  }
-
-  #home p {
-    width: 90%;
-  }
-}
-
-@media screen and (max-width: 1034px) {
-  #home h1 {
-    font-size: 4rem;
-  }
-
-  #home p {
-    width: 90%;
-  }
-}
-
-@media screen and (max-width: 986px) {
-  #home h1 {
-    font-size: 3.8rem;
-    margin-top: 0.5%;
-    margin-bottom: 0.5%;
-  }
-
-  #home p {
     font-size: 1.2rem;
-    width: 95%;
-    margin-top: 0.5%;
-    margin-bottom: 0.5%;
   }
 }
 
 
-@media screen and (max-width: 937px) {
-  #home h1 {
-    font-size: 3.6rem;
-    margin-top: 0.5%;
-    margin-bottom: 0.5%;
-  }
-
+@media screen and (max-width: 785px) {
   #home p {
-    font-size: 1.1rem;
+    width: 100%;
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 675px) {
+  #home p {
+    width: 100%;
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .btns button {
+    width: 35%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem;
+  }
+}
+
+@media screen and (max-width: 785px) {
+
+  .btns {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    padding: 5%;
+  }
+
+  .btns button {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem;
+    margin-bottom: 5%;
+  }
+}
+
+@media screen and (max-width: 640px) {
+
+  .btns button {
     width: 95%;
-    margin-top: 0.5%;
-    margin-bottom: 0.5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem;
+    margin-bottom: 5%;
   }
 }
 
+@media screen and (max-width: 1300px) {
+  #home{
+    margin-top: 1%;
+    margin-bottom: 10%;
+  }
 
-@media screen and (max-width: 887px) {
-  #home h1 {
-    font-size: 3.5rem;
-    margin-top: 0.5%;
-    margin-bottom: 0.5%;
+  #home p, #home .btns {
+    margin-top: 3%;
+  }
+
+  .contenedor-soluciones-digitales {
+    margin-top: 10%;
   }
 }
-
-
-@media screen and (max-width: 863px) {
-  #home h1 {
-    font-size: 3.4rem;
-    margin-top: 0.5%;
-    margin-bottom: 0.5%;
-  }
-}
-
-
-@media screen and (max-width: 838px) {
-
-  #home {
-    padding: 6% 10%;
-  }
-}
-
-
-@media screen and (max-width: 815px) {
-  #home h1 {
-    font-size: 3.2rem;
-    margin-top: 0.5%;
-    margin-bottom: 0.5%;
-  }
-} */
