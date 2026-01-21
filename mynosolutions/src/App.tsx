@@ -4,6 +4,7 @@ import { NuestrosServicios } from './components/nuestrosServicios'
 import { MejoresSoluciones } from './components/mejoresSoluciones'
 import { ProyectosDestacados } from './components/proyectosDestacados'
 import { Contacto } from './components/contacto'
+import { Footer } from './components/footer'
 import './App.css'
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
         <NuestrosServicios></NuestrosServicios>
         <ProyectosDestacados></ProyectosDestacados>
         <Contacto></Contacto>
+        <Footer></Footer>
       </>
   )
 }

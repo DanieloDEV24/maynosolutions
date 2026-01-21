@@ -505,147 +505,31 @@ a:hover
   left: 0;
 }
 
-
-@media screen and (max-width: 1320px) {
-
-  #home h1 {
-    font-size: 6rem;
-  }
-
+footer {
+  border-top: 1px solid #ffffff30;
 }
 
-@media screen and (max-width: 1170px) {
-
-  #home h1 {
-    font-size: 5rem;
-  }
-
+footer .logo-footer {
+  height: 3em;
 }
 
-@media screen and (max-width: 960px) {
-
-  #home h1 {
-    font-size: 4.5rem;
-  }
-
+.contenedor-contacto {
+  margin-bottom: 7%;
 }
 
-@media screen and (max-width: 860px) {
-
-  #home h1 {
-    font-size: 4rem;
-  }
-
+footer .copyright {
+  border-top: 1px solid #ffffff30;
+  font-size: 1rem;
 }
 
-@media screen and (max-width: 780px) {
-  #home {
-    padding: 0% 7%;
-  }
-  
+footer h3 {
+  color: #7c3aed;
 }
 
-@media screen and (max-width: 780px) {
-  #home h1{
-    font-size: 3.5rem;
-  }
-
-  #home {
-    padding-top: 3%;
-  }
-
-  .contenedor-soluciones-digitales {
-    margin-top: 15% !important;
-  }
+footer a {
+  color: #ffffff80;
 }
 
-@media screen and (max-width: 622px) {
-  #home h1{
-    font-size: 3.1rem;
-  }
-}
-
-
-@media screen and (max-width: 1200px) {
-  #home p {
-    width: 70%;
-  }
-}
-
-@media screen and (max-width: 962px) {
-  #home p {
-    width: 80%;
-    font-size: 1.2rem;
-  }
-}
-
-
-@media screen and (max-width: 785px) {
-  #home p {
-    width: 100%;
-    font-size: 1.2rem;
-  }
-}
-
-@media screen and (max-width: 675px) {
-  #home p {
-    width: 100%;
-    font-size: 1.2rem;
-  }
-}
-
-@media screen and (max-width: 900px) {
-  .btns button {
-    width: 35%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.3rem;
-  }
-}
-
-@media screen and (max-width: 785px) {
-
-  .btns {
-    display: flex;
-    width: 100%;
-    flex-wrap: wrap;
-    padding: 5%;
-  }
-
-  .btns button {
-    width: 90%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.3rem;
-    margin-bottom: 5%;
-  }
-}
-
-@media screen and (max-width: 640px) {
-
-  .btns button {
-    width: 95%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.3rem;
-    margin-bottom: 5%;
-  }
-}
-
-@media screen and (max-width: 1300px) {
-  #home{
-    margin-top: 1%;
-    margin-bottom: 10%;
-  }
-
-  #home p, #home .btns {
-    margin-top: 3%;
-  }
-
-  .contenedor-soluciones-digitales {
-    margin-top: 10%;
-  }
+footer p {
+  color: #ffffff80;
 }
