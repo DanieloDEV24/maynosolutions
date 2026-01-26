@@ -1,23 +1,32 @@
 import img from '../assets/img/fotoDashboard.png'
 import img2 from '../assets/img/zapas.jpg'
 import { useEffect, useState } from 'react'
+import { motion } from 'framer-motion'
 
 export const Home = () => {
 
     const [mostrar, setMostrar] = useState(false);
+    const [mostrar2, setMostrar2] = useState(false);
 
-useEffect(() => {
-    const handleScroll = () => {
-        if (window.scrollY >= 100) {
-            setMostrar(true);
-        } else {
-            setMostrar(false);
-        }
-    };
+    useEffect(() => {
+        const handleScroll = () => {
+            if (window.scrollY >= 150) {
+                setMostrar(true);
+            } else {
+                setMostrar(false);
+            }
 
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-}, []);
+
+            if (window.scrollY >= 550) {
+                setMostrar2(true);
+            } else {
+                setMostrar2(false);
+            }
+        };
+
+        window.addEventListener("scroll", handleScroll);
+        return () => window.removeEventListener("scroll", handleScroll);
+    }, []);
 
 
     return (
@@ -27,7 +36,11 @@ useEffect(() => {
                 <img src={img} alt="" />
             </div>
 
-            <div className={`bocadillo1 ${mostrar ? 'block' : 'hidden'}`}>
+
+            <motion.div     initial={{ y: 100, opacity: 0 }}
+    animate={mostrar ? { y: 0, opacity: 1 } : { y: 100, opacity: 0 }}
+    transition={{ duration: 0.4, ease: "easeOut" }}
+    className="bocadillo1">
                 <div className='flex justify-between items-start'>
                     <div className='flex flex-col items-start'>
                         <h1 id="title-bocadillo1">To-do list</h1>
@@ -63,10 +76,13 @@ useEffect(() => {
                     </div>
 
                 </div>
-            </div>
+            </motion.div>
 
 
-            <div className="bocadillo2">
+                        <motion.div     initial={{ y: 100, opacity: 0 }}
+    animate={mostrar2 ? { y: 0, opacity: 1 } : { y: 100, opacity: 0 }}
+    transition={{ duration: 0.4, ease: "easeOut" }}
+    className="bocadillo2">
                 <div className="contenedor-bocadillo flex gap-5">
                     <img src={img2} alt="" />
                     <div>
@@ -111,7 +127,7 @@ useEffect(() => {
                         </div>
                     </div>
                 </div>
-            </div>
+            </motion.div>
 
         </div>
     )

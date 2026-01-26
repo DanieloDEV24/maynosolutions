@@ -15,9 +15,36 @@
   font-family: 'MyFont';
 }
 
+.contenedor-header{
+  display: flex;
+  justify-content: center;
+  padding: 2% 10%;
+  position: sticky;
+  z-index: 9999;
+  width: 100%;
+  top: 0;
+}
+
 header{
-  padding: 3% 0%;
   margin-top: 1.5%;
+  background: rgba(255, 255, 255, 0.02);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  border-radius: 15px;
+  box-shadow: inset 0 0 6px rgba(255, 255, 255, 0.1);
+  padding: 1% 3%;
+  margin-bottom: 2%;
+}
+
+.btn-contacto-header {
+  font-size: 1.1rem;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  border-radius: 15px;
+  box-shadow: inset 0 0 2px rgba(255, 255, 255, 0.5);
+  padding: 1%;
 }
 
 .logo {
@@ -68,43 +95,10 @@ header{
 header nav a
 {
   color: #fff;
-  font-size: 1.5rem;
-}
-
-/* #home
-{
-  margin-bottom: 0%;
-  padding-top: 2%;
-}
-
-#home p
-{
-  font-size: 1.2rem;
-}
-
-#home h1 {
-  width: 100%;
-  font-size: 7rem;
-  font-weight: bolder;
-  line-height: 1.1;
-  text-align: center;
-}
-
-#home h1.header2-home {
-  background: linear-gradient(to bottom, #a78bfa, #7c3aed);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  color: transparent;
+  font-size: 1.3rem;
 }
 
 
-#home p 
-{
-  width: 60%;
-  font-size: 1.4rem;
-  margin-top: 2%;
-} */
 
 #home {
   display: flex;
@@ -143,12 +137,12 @@ header nav a
 }
 
 .bocadillo1 {
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.07);
   backdrop-filter: blur(30px);
   -webkit-backdrop-filter: blur(30px);
   border-radius: 30px;
   padding: 1.5%;
-  box-shadow: inset 0 0 7px rgba(255, 255, 255, 0.5);
+  box-shadow: inset 0 0 6px rgba(255, 255, 255, 0.1);
   width: 25%;
   position: absolute;
   z-index: 1000;
@@ -158,15 +152,15 @@ header nav a
 }
 
 .bocadillo2 {
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.07);
   backdrop-filter: blur(30px);
   -webkit-backdrop-filter: blur(30px);
   border-radius: 30px;
   padding: 1.5%;
-  box-shadow: inset 0 0 7px rgba(255, 255, 255, 0.5);
+  box-shadow: inset 0 0 6px rgba(255, 255, 255, 0.1);
   width: 25%;
   position: absolute;
-  z-index: 1000;
+  z-index: 1001;
   top: 70%;
   left: 2%;
 
@@ -402,6 +396,7 @@ header nav a
 .encabezado-nuestros-servicios
 {
   margin-top: 5%;
+  font-size: 4rem;
 }
 
 
@@ -663,3 +658,14 @@ footer p {
   color: #ffffff80;
 }
 
+.contacto {
+  background: rgba(255, 255, 255, 0.07);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  border-radius: 30px;
+  /* padding: 2.5%; */
+  /* margin-top: 3%; */
+  box-shadow: inset 0 0 6px rgba(255, 255, 255, 0.1);
+  /* margin-left: 5%;
+  margin-right: 5%; */
+}
