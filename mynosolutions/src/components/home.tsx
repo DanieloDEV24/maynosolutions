@@ -31,10 +31,21 @@ export const Home = () => {
 
     return (
         <div id="home">
-            <h1 id="encabezado-home"><span>Tu visión</span><br />Hecha realidad digital.</h1>
-            <div className="contenedor-imagen">
+            <motion.h1 initial={{ y: 80, opacity: 0 }}   // empieza arriba
+      animate={{ y: 0, opacity: 1 }}     // baja a su sitio
+      transition={{
+        duration: 0.6,
+        ease: "easeOut", 
+        delay: 0.3
+      }} id="encabezado-home"><span>Tu visión</span><br />Hecha realidad digital.</motion.h1>
+            <motion.div initial={{ y: 80, opacity: 0 }}   // empieza arriba
+      animate={{ y: 0, opacity: 1 }}     // baja a su sitio
+      transition={{
+        duration: 0.6,
+        ease: "easeOut"
+      }} className="contenedor-imagen">
                 <img src={img} alt="" />
-            </div>
+            </motion.div>
 
 
             <motion.div     initial={{ y: 100, opacity: 0 }}

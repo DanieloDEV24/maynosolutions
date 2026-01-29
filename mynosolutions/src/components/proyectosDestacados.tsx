@@ -1,8 +1,35 @@
+import { motion, type Variants } from 'framer-motion';
+import { useEffect, useState, useRef } from 'react';
 import RotMoncayo from "../assets/img/RotMoncayo.png";
 import RestArde from "../assets/img/RestArde.png"
 
 export const ProyectosDestacados = () => {
     
+    const [mostrar, setMostrar] = useState(false);
+    const componentRef = useRef<HTMLDivElement>(null);
+
+    useEffect(() => {
+        const observer = new IntersectionObserver(
+            ([entry]) => {
+                setMostrar(entry.isIntersecting);
+            },
+            {
+                threshold: 0.1,
+                rootMargin: '0px'
+            }
+        );
+
+        if (componentRef.current) {
+            observer.observe(componentRef.current);
+        }
+
+        return () => {
+            if (componentRef.current) {
+                observer.unobserve(componentRef.current);
+            }
+        };
+    }, []);
+
     const proyectos = [
         {
             titulo: "Rótulos Moncayo", 
@@ -17,15 +44,64 @@ export const ProyectosDestacados = () => {
             imagen: RestArde
         }
     ];
+
+    const containerVariants = {
+        hidden: { opacity: 0 },
+        visible: {
+            opacity: 1,
+            transition: {
+                staggerChildren: 0.2,
+                delayChildren: 0.1,
+            }
+        }
+    };
+
+    const itemVariants: Variants = {
+        hidden: { 
+            opacity: 0,
+            y: 30,
+            scale: 0.95
+        },
+        visible: { 
+            opacity: 1,
+            y: 0,
+            scale: 1,
+            transition: {
+                duration: 0.6,
+                ease: "easeOut"
+            }
+        }
+    };
     
     return (
-        <div className="contenedor-proyectos">
-            <h1 className="title-proyectos">Proyectos <span>Destacados</span></h1>
-            <div className="contenedor-nuestros-proyectos">
+        <div className="contenedor-proyectos" ref={componentRef}>
+            <motion.h1 
+                className="title-proyectos"
+                initial={{ opacity: 0, y: -20 }}
+                animate={mostrar ? { opacity: 1, y: 0 } : { opacity: 0, y: -20 }}
+                transition={{ duration: 0.6, ease: "easeOut" }}
+            >
+                Proyectos <span>Destacados</span>
+            </motion.h1>
+            <motion.div 
+                className="contenedor-nuestros-proyectos"
+                variants={containerVariants}
+                initial="hidden"
+                animate={mostrar ? "visible" : "hidden"}
+            >
                 {
-                    proyectos.map((proyecto) => (
-                       <div className="card-proyecto">
-                            <div className="imagen-card-proyectos"   style={{
+                    proyectos.map((proyecto, index) => (
+                       <motion.div 
+                            key={index}
+                            className="card-proyecto"
+                            variants={itemVariants}
+                            whileHover={{ 
+                                y: -8, 
+                                scale: 1.02,
+                                transition: { duration: 0.3 } 
+                            }}
+                       >
+                            <div className="imagen-card-proyectos" style={{
                                 backgroundImage: `url(${proyecto.imagen})`,
                                 backgroundSize: 'cover',
                                 backgroundPosition: 'center',
@@ -47,10 +123,10 @@ export const ProyectosDestacados = () => {
                                     {proyecto.descripcion}
                                 </p>
                             </div>
-                       </div> 
+                       </motion.div> 
                     ))
                 }
-            </div>
+            </motion.div>
         </div>
     )
 }

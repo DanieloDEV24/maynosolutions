@@ -1,12 +1,38 @@
-
+import { motion, type Variants } from 'framer-motion';
 import { IconoCodigo } from "./icons/iconoCodigo"
 import { IconoPaint } from "./icons/iconoPaint"
 import { IconoPicture } from "./icons/iconoPicture"
 import { IconoPhone } from "./icons/iconoPhone"
 import { IconoNet } from "./icons/iconoNet"
 import { IconoUX } from "./icons/iconoUX"
+import { useEffect, useState, useRef } from 'react';
 
 export const NuestrosServicios = () => {
+
+  const [mostrar, setMostrar] = useState(false);
+  const componentRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        setMostrar(entry.isIntersecting);
+      },
+      {
+        threshold: 0.1, // Se activa cuando el 10% del componente es visible
+        rootMargin: '0px'
+      }
+    );
+
+    if (componentRef.current) {
+      observer.observe(componentRef.current);
+    }
+
+    return () => {
+      if (componentRef.current) {
+        observer.unobserve(componentRef.current);
+      }
+    };
+  }, []);
 
     const servicios = [
         {
@@ -44,14 +70,55 @@ export const NuestrosServicios = () => {
         }
     ]
 
+    const containerVariants = {
+        hidden: { opacity: 0 },
+        visible: {
+            opacity: 1,
+            transition: {
+                staggerChildren: 0.08,
+                delayChildren: 0.1,
+            }
+        }
+    };
+
+    const itemVariants : Variants= {
+        hidden: { 
+            opacity: 0,
+            y: 20
+        },
+        visible: { 
+            opacity: 1,
+            y: 0,
+            transition: {
+                duration: 0.5,
+                ease: "easeOut"
+            }
+        }
+    };
+
     return (
-    <div id="nuestros-servicios">
-      <h1 className="encabezado-nuestros-servicios">
+    <div id="nuestros-servicios" ref={componentRef}>
+      <motion.h1 
+        className="encabezado-nuestros-servicios"
+        initial={{ opacity: 0, y: -10 }}
+        animate={mostrar ? { opacity: 1, y: 0 } : { opacity: 0, y: -10 }}
+        transition={{ duration: 0.6, ease: "easeOut" }}
+      >
         Nuestros <span>Servicios</span>
-      </h1>
-      <div className="grid-servicios">
+      </motion.h1>
+      <motion.div 
+        className="grid-servicios"
+        variants={containerVariants}
+        initial="hidden"
+        animate={mostrar ? "visible" : "hidden"}
+      >
         {servicios.map((servicio, index) => (
-          <div key={index} className="card-servicio">
+          <motion.div 
+            key={index} 
+            className="card-servicio"
+            variants={itemVariants}
+            whileHover={{ y: -4, transition: { duration: 0.2 } }}
+          >
             <div className="icon-card-servicio">
                 {servicio.icon}
             </div>
@@ -62,9 +129,9 @@ export const NuestrosServicios = () => {
                 <li key={i}>{feature}</li>
               ))}
             </ul>
-          </div>
+          </motion.div>
         ))}
-      </div>
+      </motion.div>
     </div>
   )
 }
