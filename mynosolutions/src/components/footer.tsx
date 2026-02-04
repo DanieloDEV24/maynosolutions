@@ -4,7 +4,7 @@ export const Footer = () => {
     return (
         <footer className='' >
             <div className="flex justify-between items-start gap-10 p-10">
-                <div className='flex flex-col justify-start items-start w-1/4 mr-20' >
+                <div className='flex flex-col justify-start items-start w-1/4 mr-20 texto-footer' >
                     <img src={logo2} alt="" className='logo-footer'/>
                     <p className='text-xl text-left pt-3' >Transformamos tus ideas en realidad. Especialistas en desarrollo web y diseño gráfico profesional.</p>
                 </div>

@@ -6,6 +6,7 @@ import { ProyectosDestacados } from './components/proyectosDestacados'
 import { Contacto } from './components/contacto'
 import { Footer } from './components/footer'
 import './App.css'
+import './responsive.css'
 
 
 function App() {
